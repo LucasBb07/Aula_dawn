@@ -1,0 +1,269 @@
+/* LST Jogador */
+
+/*<style>*/
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa; /* Cor de fundo neutra */
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-out; /* Animação de fade-in para a página */
+        }
+
+        header {
+            background-color: #f5f5dc; /* Fundo escuro para o cabeçalho */
+            color: #ffffff; /* Cor do título em branco */
+            padding: 30px 20px; /* Ajuste no padding */
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: slideDown 0.5s ease-out; /* Efeito de slide do cabeçalho */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3.5em; /* Diminuir o tamanho da fonte */
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700; /* Título em negrito */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #838325; /* Título em branco */
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02); /* Leve efeito de zoom ao passar o mouse */
+        }
+
+        .add-link {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .add-link a {
+            text-decoration: none;
+            background-color: #28a745; /* Verde para botão adicionar */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .add-link a:hover {
+            background-color: #218838; /* Verde escuro para hover */
+            transform: scale(1.05); /* Aumenta o botão quando o usuário passar o mouse */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        th {
+            background-color: #30D5C8; /* Azul para o cabeçalho */
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td:hover {
+            background-color: #e9ecef; /* Fundo suave no hover */
+            transform: translateX(10px); /* Leve deslocamento no hover */
+        }
+
+        td a {
+            color: #007bff; /* Azul para links */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        td a:hover {
+            color: #0056b3; /* Azul mais escuro para hover */
+            text-decoration: underline;
+        }
+
+        .options {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .options a {
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .options a.edit {
+            background-color: #28a745; /* Verde para o botão editar */
+            color: white;
+        }
+
+        .options a.edit:hover {
+            background-color: #218838; /* Verde escuro para hover */
+            transform: scale(1.1); /* Aumenta o botão editar */
+        }
+
+        .options a.delete {
+            background-color: #dc3545; /* Vermelho para o botão excluir */
+            color: white;
+        }
+
+        .options a.delete:hover {
+            background-color: #c82333; /* Vermelho mais escuro para hover */
+            transform: scale(1.1); /* Aumenta o botão excluir */
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+/*</style>*/
+
+
+/*time*/
+/*<style>*/
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            padding: 30px 20px; /* Diminuir o tamanho do cabeçalho */
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3.5em; /* Diminuir o tamanho da fonte */
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700; /* Colocar o título em negrito */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffffff; /* Título em branco */
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .add-link {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .add-link a {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-link a:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+
+        td:hover {
+            background-color: #e9ecef;
+        }
+
+        td a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        td a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .options {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-start; /* Alinhar os links à esquerda */
+        }
+
+        .options a {
+            background-color: #ff6347;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .options a:hover {
+            background-color: #e53e3e;
+        }
+
+  /* </style> */
+
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css"></link> 
+</head>
+<body>
+
+    <header>
+        <h1>Times</h1>
+    </header>
+
+    <div class="container">
+        <div class="add-link">
+            <a href="/admin/time/add">+ Adicionar Time</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Estádio</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Brasil-PE</td>
+                    <td>Bento Freitas</td>
+                    <td class="options">
+                        <a href="/admin/time/edt/1">Editar</a>
+                        <a href="/admin/time/del/:id">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Juventude</td>
+                    <td>Alfredo Jaconi</td>
+                    <td class="options">
+                        <a href="/admin/time/edt/2">Editar</a>
+                        <a href="/admin/time/del/:id">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

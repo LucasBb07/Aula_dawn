@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogadores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css"></link> 
+    
+</head>
+<body>
+
+    <header>
+        <h1>Jogadores</h1>
+    </header>
+
+    <div class="container">
+        <div class="add-link">
+            <a href="/admin/jogador/add">+ Adicionar jogador</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Jogador</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Posição</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cristian Oliveira</td>
+                    <td>1.88 cm</td>
+                    <td>80 kg</td>
+                    <td>Atacante</td>
+                    <td class="options">
+                        <a href="/admin/jogador/edt/1" class="edit">Editar</a>
+                        <a href="/admin/jogador/del/:id" class="delete">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Geromel</td>
+                    <td>1.93 cm</td>
+                    <td>75 kg</td>
+                    <td>Zagueiro</td>
+                    <td class="options">
+                        <a href="/admin/jogador/edt/2" class="edit">Editar</a>
+                        <a href="/admin/jogador/del/:id" class="delete">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
