@@ -8,10 +8,14 @@
 </head>
 <body>
     <form action="" method= "post">
-        <label for="">Nome</label>
-        <input type="text"><br>
-        <label for="">Estádio</label>
-        <input type="text"><br>
+        <div class="form-group">
+        <label for="">Nome: </label>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+    <div class="form-group">
+        <label for="estádio">Estádio: </label>
+        <input type="text" id="estadio" name="estadio" required>
+        </div>
         <button type="submit">Enviar</button>
     </form>
 </body>

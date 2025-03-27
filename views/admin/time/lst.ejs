@@ -27,22 +27,19 @@
                 </tr>
             </thead>
             <tbody>
+                    
+                    
+                    <%Times.forEach(function(time){%>
                 <tr>
-                    <td>Brasil-PE</td>
-                    <td>Bento Freitas</td>
+                    <td><%=time.nome%></td>
+                    <td><%=time.estadio%></td>
                     <td class="options">
                         <a href="/admin/time/edt/1">Editar</a>
                         <a href="/admin/time/del/:id">Excluir</a>
                     </td>
                 </tr>
-                <tr>
-                    <td>Juventude</td>
-                    <td>Alfredo Jaconi</td>
-                    <td class="options">
-                        <a href="/admin/time/edt/2">Editar</a>
-                        <a href="/admin/time/del/:id">Excluir</a>
-                    </td>
-                </tr>
+                <%})%>
+              
             </tbody>
         </table>
     </div>
